@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- Tipo de documento HTML5 -->
+<html lang="es"> <!-- Idioma español -->
+
+<head> <!-- Cabecera invisible -->
+<meta charset="UTF-8"> <!-- Permite acentos y ñ -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive móvil -->
+<title>InfoT3K | Actualidad Tecnológica</title> <!-- Título del navegador -->
+<link rel="stylesheet" href="style.css"> <!-- Conecta CSS -->
+</head> <!-- Fin head -->
+
+<body> <!-- Inicio contenido visible -->
+
+<header> <!-- Encabezado -->
+<a href="index.html"> <!-- Enlace al inicio -->
+<img src="img/infoW.png" alt="Logo InfoT3K" class="logo"> <!-- Logo -->
+</a>
+
+<div class="header-text"> <!-- Texto del header -->
+<h1>InfoT3K</h1> <!-- Título web -->
+<p>Tu dosis diaria de hardware, IA y futuro.</p> <!-- Eslogan -->
+</div>
+</header> <!-- Fin header -->
+
+<nav> <!-- Menú de navegación -->
+<a onclick="filtrar('todas')">Inicio</a> <!-- Botón muestra todo -->
+<a onclick="filtrar('hardware')">Hardware</a> <!-- Filtro hardware -->
+<a onclick="filtrar('ia')">IA</a> <!-- Filtro IA -->
+<a onclick="filtrar('moviles')">Móviles</a> <!-- Filtro móviles -->
+</nav> <!-- Fin nav -->
+
+<main class="container"> <!-- Contenedor principal -->
+
+<!-- ARTÍCULO 1 -->
+<article class="post hardware"> <!-- Clase hardware para filtrar -->
+<h2>El drama de la RAM</h2>
+<p class="meta">Hardware</p>
+<p>La escasez de componentes empuja precios...</p>
+</article>
+
+<!-- ARTÍCULO 2 -->
+<article class="post ia"> <!-- Clase IA -->
+<h2>GPT-6 casi humano</h2>
+<p class="meta">Inteligencia Artificial</p>
+<p>Modelos que razonan como humanos...</p>
+</article>
+
+<!-- ARTÍCULO 3 -->
+<article class="post hardware"> <!-- Hardware -->
+<h2>Nvidia RTX 6090</h2>
+<p class="meta">Hardware</p>
+<p>Consumo de 500W confirmado...</p>
+</article>
+
+<!-- ARTÍCULO 4 -->
+<article class="post moviles"> <!-- Móviles -->
+<h2>Smartphones sin batería</h2>
+<p class="meta">Móviles</p>
+<p>Nuevas tecnologías de carga infinita...</p>
+</article>
+
+</main> <!-- Fin main -->
+
+<footer> <!-- Pie -->
+<p>&copy; 2026 InfoT3K</p>
+</footer>
+
+<!-- JavaScript interno -->
+<script> 
+function filtrar(categoria) { // Función que filtra artículos
+
+let posts = document.querySelectorAll(".post"); // Selecciona todos los artículos
+
+posts.forEach(post => { // Recorre cada artículo
+
+if (categoria === "todas") { // Si se elige mostrar todo
+post.style.display = "block"; // Mostrar artículo
+return; // Salir
+}
+
+if (post.classList.contains(categoria)) { // Si coincide categoría
+post.style.display = "block"; // Mostrar
+} else {
+post.style.display = "none"; // Ocultar
+}
+
+});
+
+}
+</script> <!-- Fin JS -->
+
+</body> <!-- Fin body -->
+</html> <!-- Fin documento -->

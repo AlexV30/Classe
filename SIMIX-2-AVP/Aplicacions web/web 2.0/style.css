@@ -1,0 +1,68 @@
+/* Configuración general */
+body {
+font-family: Arial, sans-serif; /* Fuente básica */
+margin: 0; /* Quita márgenes */
+background: #111827; /* Fondo oscuro tech */
+color: #e5e7eb; /* Texto claro */
+}
+
+/* Header */
+header {
+display: flex; /* Elementos en fila */
+align-items: center; /* Centrado vertical */
+gap: 20px; /* Espacio entre logo y texto */
+padding: 1rem 5%; /* Margen interno */
+background: #020617; /* Negro profundo */
+}
+
+/* Logo */
+.logo {
+max-width: 120px;
+}
+
+/* Navegación */
+nav {
+background: #1f2933;
+padding: 10px 5%;
+}
+
+/* Botones menú */
+nav a {
+color: white;
+margin-right: 15px;
+cursor: pointer; /* Cursor clic */
+}
+
+/* Hover menú */
+nav a:hover {
+color: #22d3ee;
+}
+
+/* Contenedor noticias */
+.container {
+max-width: 900px;
+margin: auto;
+padding: 20px;
+}
+
+/* Tarjetas */
+.post {
+background: #020617;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 8px;
+border: 1px solid #1f2933;
+transition: transform 0.2s;
+}
+
+/* Hover tarjeta */
+.post:hover {
+transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 20px;
+background: #020617;
+}
