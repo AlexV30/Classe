@@ -1,0 +1,78 @@
+/* Configuración General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER: Aquí alineamos a la izquierda */
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 1rem 5%; /* 5% de margen a los lados para que no toque el borde de la pantalla */
+    
+    display: flex;          /* Pone los elementos en fila */
+    align-items: center;    /* Centra el logo y el texto verticalmente entre sí */
+    justify-content: flex-start; /* Empuja todo hacia la izquierda */
+    gap: 20px;              /* Espacio de separación entre el logo y el texto */
+}
+
+/* Estilo del Logo */
+.logo {
+    max-width: 120px;       /* Tamaño del logo */
+    height: auto;
+    display: block;
+}
+
+/* Estilo del texto al lado del logo */
+.header-text h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #00ffcc;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Navegación */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: flex-start; /* También alineamos el menú a la izquierda */
+    padding: 0.5rem 5%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    color: #00ffcc;
+}
+
+/* Contenedor de noticias */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.post {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.leer-mas {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
