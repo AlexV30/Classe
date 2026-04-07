@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noticias</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+<h1>InfoT3K</h1>
+</header>
+
+<nav>
+<a onclick="filtrar('todas')">Todo</a>
+<a onclick="filtrar('hardware')">Hardware</a>
+<a onclick="filtrar('ia')">IA</a>
+<a onclick="filtrar('moviles')">Móviles</a>
+
+<a href="index.html">Inicio</a>
+<a href="sobre.html" class="right">Sobre Nosotros</a>
+</nav>
+
+<main class="container">
+
+<!-- HARDWARE -->
+<section class="bloque hardware" id="hardware">
+<h2>Hardware</h2>
+
+<article class="post hardware">
+<a href="noticias/ram.html"><h3>El drama de la RAM</h3></a>
+<p class="meta">Hardware</p>
+</article>
+
+<article class="post hardware">
+<a href="noticias/rtx6090.html"><h3>Nvidia RTX 6090</h3></a>
+<p class="meta">Hardware</p>
+</article>
+
+<article class="post hardware">
+<a href="noticias/chips.html"><h3>Crisis de chips</h3></a>
+<p class="meta">Hardware</p>
+</article>
+
+</section>
+
+<!-- IA -->
+<section class="bloque ia" id="ia">
+<h2>IA</h2>
+
+<article class="post ia">
+<a href="noticias/ia.html"><h3>GPT-6 casi humano</h3></a>
+<p class="meta">IA</p>
+</article>
+
+<article class="post ia">
+<a href="noticias/robots.html"><h3>Robots domésticos</h3></a>
+<p class="meta">IA</p>
+</article>
+
+</section>
+
+<!-- MOVILES -->
+<section class="bloque moviles" id="moviles">
+<h2>Móviles</h2>
+
+<article class="post moviles">
+<a href="noticias/moviles.html"><h3>Smartphones sin batería</h3></a>
+<p class="meta">Móviles</p>
+</article>
+
+<article class="post moviles">
+<a href="noticias/satelite.html"><h3>Internet satelital</h3></a>
+<p class="meta">Móviles</p>
+</article>
+
+<article class="post moviles">
+<a href="noticias/nube.html"><h3>Gaming en la nube</h3></a>
+<p class="meta">Gaming</p>
+</article>
+
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 InfoT3K</p>
+</footer>
+
+<script>
+function filtrar(categoria) {
+
+let bloques = document.querySelectorAll(".bloque");
+
+bloques.forEach(bloque => {
+
+if (categoria === "todas") {
+bloque.style.display = "block";
+return;
+}
+
+if (bloque.classList.contains(categoria)) {
+bloque.style.display = "block";
+} else {
+bloque.style.display = "none";
+}
+
+});
+
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* Estilo general */
+body {
+font-family: Arial, sans-serif; /* Fuente */
+margin: 0; /* Quita márgenes */
+background: #111827; /* Fondo oscuro */
+color: #e5e7eb; /* Texto claro */
+}
+
+/* Header */
+header {
+display: flex; /* Elementos en fila */
+align-items: center; /* Centrado vertical */
+gap: 20px; /* Espacio entre elementos */
+padding: 15px 5%; /* Espacio interior */
+background: #020617; /* Fondo */
+}
+
+/* Logo */
+.logo {
+max-width: 100px; /* Tamaño máximo */
+}
+
+/* Texto del header */
+.header-text h1 {
+margin: 0; /* Quita margen */
+}
+
+.header-text p {
+margin: 0; /* Quita margen */
+font-size: 14px; /* Tamaño pequeño */
+color: #9ca3af; /* Gris */
+}
+
+/* Navegación */
+nav {
+background: #1f2933; /* Fondo */
+padding: 10px 5%; /* Espacio */
+}
+
+/* Enlaces del menú */
+nav a {
+color: white; /* Color texto */
+margin-right: 15px; /* Separación */
+cursor: pointer; /* Cursor clic */
+text-decoration: none; /* Quita subrayado */
+}
+
+/* Hover menú */
+nav a:hover {
+color: #22d3ee; /* Color al pasar ratón */
+}
+
+/* Contenedor */
+.container {
+max-width: 900px; /* Ancho máximo */
+margin: auto; /* Centrado */
+padding: 20px; /* Espacio */
+}
+
+/* Tarjetas de artículos */
+.post {
+background: #020617; /* Fondo */
+padding: 20px; /* Espacio */
+margin-bottom: 20px; /* Separación */
+border-radius: 8px; /* Bordes redondeados */
+border: 1px solid #1f2933; /* Borde */
+transition: transform 0.2s; /* Animación */
+}
+
+/* Hover tarjeta */
+.post:hover {
+transform: scale(1.02); /* Efecto zoom */
+}
+
+/* Categoría */
+.meta {
+font-size: 12px; /* Tamaño pequeño */
+color: #22d3ee; /* Color azul */
+}
+
+/* Footer */
+footer {
+text-align: center; /* Centrado */
+padding: 20px; /* Espacio */
+background: #020617; /* Fondo */
+margin-top: 20px; /* Separación */
+}
+
+/* Alinear menú */
+nav {
+display: flex; /* Hace fila */
+justify-content: space-between; /* Separa extremos */
+}
+
+/* Agrupar izquierda */
+nav a {
+margin-right: 15px;
+}
+
+/* Elemento derecha */
+.right {
+margin-left: auto; /* Lo manda a la derecha */
+}
+
+/* Tarjetas portada */
+.hero {
+background: #020617;
+padding: 30px;
+margin-bottom: 20px;
+border-radius: 10px;
+cursor: pointer;
+transition: transform 0.2s;
+}
+
+/* Hover portada */
+.hero:hover {
+transform: scale(1.05);
+background: #111827;
+}
